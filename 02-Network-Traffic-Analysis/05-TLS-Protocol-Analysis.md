@@ -88,24 +88,24 @@ This lab provided practical experience analyzing TLS traffic with Wireshark. By 
 
 ## 📸 Screenshots
 
-### All TLS Traffic
+### 1. All TLS Traffic
 
-`Screenshots/02-Network-Traffic-Analysis/01.1-all-tls-traffic.png`
+Applied the `tls` display filter to display all TLS packets captured in the network traffic.
 
-Shows all packets filtered using the `tls` display filter.
-
----
-
-### Client Hello Messages
-
-`Screenshots/02-Network-Traffic-Analysis/01.2-client-hello.png`
-
-Displays TLS Client Hello handshake packets using the `tls.handshake.type == 1` filter.
+![All TLS Traffic](../Screenshots/02-Network-Traffic-Analysis/01.1-all-tls-traffic.png)
 
 ---
 
-### TLS 1.2 Traffic
+### 2. Client Hello Messages
 
-`Screenshots/02-Network-Traffic-Analysis/01.3-tls-1.2-traffic.png`
+Filtered Client Hello handshake packets using the `tls.handshake.type == 1` display filter to observe the initiation of the TLS handshake.
 
-Shows packets filtered for TLS 1.2 using `tls.record.version == 0x0303`.
+![Client Hello Messages](../Screenshots/02-Network-Traffic-Analysis/01.2-client-hello.png)
+
+---
+
+### 3. TLS 1.2 Traffic
+
+Applied the `tls.record.version == 0x0303` display filter to identify packets using the TLS 1.2 protocol version.
+
+![TLS 1.2 Traffic](../Screenshots/02-Network-Traffic-Analysis/01.3-tls-1.2-traffic.png)
