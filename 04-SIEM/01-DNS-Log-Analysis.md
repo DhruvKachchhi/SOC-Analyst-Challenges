@@ -104,7 +104,7 @@ This lab demonstrated how Splunk can be used to investigate DNS activity by anal
 
 The SPL query was used to identify the domain names receiving the highest number of DNS queries.
 
-![Most Frequently Queried Domain Names](../Screenshots/04-SIEM/01.1-most-frequently-queried-domain-names.png)
+![Most Frequently Queried Domain Names](../Screenshots/04-Splunk/01.1-most-frequently-queried-domain-names.png)
 
 ---
 
@@ -112,7 +112,7 @@ The SPL query was used to identify the domain names receiving the highest number
 
 The query identified the source IP addresses responsible for generating the highest volume of DNS requests.
 
-![Most Active Source IP Addresses](../Screenshots/04-SIEM/01.2-most-active-source-ip-addresses.png)
+![Most Active Source IP Addresses](../Screenshots/04-Splunk/01.2-most-active-source-ip-addresses.png)
 
 ---
 
@@ -120,4 +120,4 @@ The query identified the source IP addresses responsible for generating the high
 
 The SPL query provided a breakdown of DNS query types observed within the ingested logs.
 
-![DNS Query Type Distribution](../Screenshots/04-SIEM/01.3-dns-query-type-distribution.png)
+![DNS Query Type Distribution](../Screenshots/04-Splunk/01.3-dns-query-type-distribution.png)
