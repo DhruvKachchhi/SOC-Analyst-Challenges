@@ -1,12 +1,12 @@
 # Introduction to Wireshark
 
-## Objective
+##  Objective
 
 The objective of this lab is to understand the fundamentals of Wireshark and its role in network traffic analysis. This exercise focuses on analyzing captured network packets, applying display filters, inspecting protocol details, and understanding how SOC analysts use packet captures during security investigations.
 
 ---
 
-## What is Wireshark?
+##  What is Wireshark?
 
 Wireshark is a powerful open-source network protocol analyzer used to capture and inspect network traffic. It enables security professionals to analyze packets in real time or from previously captured packet capture (PCAP) files.
 
@@ -26,7 +26,7 @@ Wireshark helps SOC analysts to:
 
 ---
 
-## Lab Environment
+##  Lab Environment
 
 | Component         | Details                  |
 | ----------------- | ------------------------ |
@@ -49,7 +49,7 @@ During this lab, I:
 
 ---
 
-## Key Features Explored
+##  Key Features Explored
 
 * Packet List Pane
 * Packet Details Pane
@@ -60,13 +60,13 @@ During this lab, I:
 
 ---
 
-## SOC Analyst Perspective
+##  SOC Analyst Perspective
 
 Wireshark enables SOC analysts to inspect network communications at the packet level. During investigations, it helps identify suspicious connections, analyze protocol behavior, detect anomalies, and extract valuable indicators that support threat detection and incident response.
 
 ---
 
-## Key Learnings
+##  Key Learnings
 
 * Learned the Wireshark interface and navigation.
 * Applied display filters to isolate network traffic.
@@ -76,13 +76,13 @@ Wireshark enables SOC analysts to inspect network communications at the packet l
 
 ---
 
-## Conclusion
+##  Conclusion
 
 Wireshark provides deep visibility into network communications and is an essential tool for SOC analysts. Understanding how to inspect packets, apply filters, and analyze protocol behavior is a fundamental skill for network security monitoring and incident investigation.
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
 ### Wireshark Interface with ICMP Display Filter
 
