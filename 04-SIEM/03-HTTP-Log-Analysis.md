@@ -113,7 +113,7 @@ This lab demonstrated how Splunk can be used to investigate HTTP activity using 
 
 The SPL query identified the client IP addresses generating the highest volume of HTTP requests.
 
-![Top 10 Endpoints](../Screenshots/04-SIEM/03.1-top-10-endpoints-generating-web-traffic.png)
+![Top 10 Endpoints](../Screenshots/04-Splunk/03.1-top-10-endpoints-generating-web-traffic.png)
 
 ---
 
@@ -121,7 +121,7 @@ The SPL query identified the client IP addresses generating the highest volume o
 
 The query counted HTTP server errors by filtering response status codes in the 5xx range.
 
-![HTTP Server Errors](../Screenshots/04-SIEM/03.2-http-server-errors.png)
+![HTTP Server Errors](../Screenshots/04-Splunk/03.2-http-server-errors.png)
 
 ---
 
@@ -129,7 +129,7 @@ The query counted HTTP server errors by filtering response status codes in the 5
 
 The SPL query identified User-Agent strings commonly associated with automated tools and scripted activity.
 
-![Suspicious User-Agent Analysis](../Screenshots/04-SIEM/03.3-suspicious-user-agent-analysis.png)
+![Suspicious User-Agent Analysis](../Screenshots/04-Splunk/03.3-suspicious-user-agent-analysis.png)
 
 ---
 
@@ -137,4 +137,4 @@ The SPL query identified User-Agent strings commonly associated with automated t
 
 The query identified HTTP responses with payload sizes greater than 500 KB to highlight potentially significant file transfers.
 
-![Large File Transfer Analysis](../Screenshots/04-SIEM/03.4-large-file-transfer-analysis.png)
+![Large File Transfer Analysis](../Screenshots/04-Splunk/03.4-large-file-transfer-analysis.png)
