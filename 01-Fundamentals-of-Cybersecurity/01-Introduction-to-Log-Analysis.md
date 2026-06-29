@@ -91,4 +91,6 @@ This lab introduced the fundamentals of Linux log analysis by monitoring authent
 
 ## Screenshot
 
-*The screenshot demonstrating the monitored authentication logs will be added after completing the documentation.*
+The following screenshot demonstrates real-time monitoring of Linux authentication logs using the `tail -f /var/log/auth.log` command.
+
+![Linux Authentication Log](../Screenshots/01-Log-Analysis/01-auth-log-monitoring.png)
