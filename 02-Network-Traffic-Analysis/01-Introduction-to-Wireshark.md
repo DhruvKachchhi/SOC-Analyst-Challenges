@@ -84,15 +84,8 @@ Wireshark provides deep visibility into network communications and is an essenti
 
 ## 📸 Screenshots
 
-### Wireshark Interface with ICMP Display Filter
+### Wireshark Interface
 
-![Wireshark ICMP Display Filter](../Screenshots/02-Network-Traffic-Analysis/01.1-wireshark-icmp-display-filter.png)
+The following screenshot shows the Wireshark interface used to inspect captured network traffic and explore packet analysis features.
 
-### ICMP Packet Analysis
-
-![ICMP Packet Analysis](../Screenshots/02-Network-Traffic-Analysis/01.2-wireshark-icmp-packet-analysis.png)
-
-### Endpoint Statistics
-
-![Wireshark Endpoint Statistics](../Screenshots/02-Network-Traffic-Analysis/01.3-wireshark-endpoints-analysis.png)
-
+![Wireshark Interface](../Screenshots/02-Network-Traffic-Analysis/01.1-wireshark-interface.png)
