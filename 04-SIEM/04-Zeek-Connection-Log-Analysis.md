@@ -114,7 +114,7 @@ This lab demonstrated how Splunk can be used to analyze Zeek connection logs for
 
 The SPL query identified the client IP addresses generating the highest number of network connections.
 
-![Top 10 Client IP Addresses](../Screenshots/04-SIEM/04.1-top-10-client-ip-addresses.png)
+![Top 10 Client IP Addresses](../Screenshots/04-Splunk/04.1-top-10-client-ip-addresses.png)
 
 ---
 
@@ -122,7 +122,7 @@ The SPL query identified the client IP addresses generating the highest number o
 
 The query summarized the network services observed within the connection logs.
 
-![Most Common Network Services](../Screenshots/04-SIEM/04.2-most-common-network-services.png)
+![Most Common Network Services](../Screenshots/04-Splunk/04.2-most-common-network-services.png)
 
 ---
 
@@ -130,7 +130,7 @@ The query summarized the network services observed within the connection logs.
 
 The SPL query filtered and displayed connections with a duration greater than one second for further investigation.
 
-![Long-Duration Network Connections](../Screenshots/04-SIEM/04.3-long-duration-network-connections.png)
+![Long-Duration Network Connections](../Screenshots/04-Splunk/04.3-long-duration-network-connections.png)
 
 ---
 
@@ -138,4 +138,4 @@ The SPL query filtered and displayed connections with a duration greater than on
 
 The query identified the internal destination servers receiving the highest number of network connections.
 
-![Most Accessed Internal Servers](../Screenshots/04-SIEM/04.4-most-accessed-internal-servers.png)
+![Most Accessed Internal Servers](../Screenshots/04-Splunk/04.4-most-accessed-internal-servers.png)
