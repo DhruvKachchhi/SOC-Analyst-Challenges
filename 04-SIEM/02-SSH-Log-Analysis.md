@@ -101,7 +101,7 @@ This lab demonstrated how Splunk can be used to investigate SSH authentication a
 
 The SPL query identified the source IP addresses responsible for the highest number of failed SSH authentication attempts.
 
-![Top 10 Failed SSH Login Attempts](../Screenshots/04-SIEM/02.1-top-10-failed-ssh-login-attempts.png)
+![Top 10 Failed SSH Login Attempts](../Screenshots/04-Splunk/02.1-top-10-failed-ssh-login-attempts.png)
 
 ---
 
@@ -109,7 +109,7 @@ The SPL query identified the source IP addresses responsible for the highest num
 
 The query calculated the total number of SSH connections recorded in the ingested log dataset.
 
-![Total SSH Connections](../Screenshots/04-SIEM/02.2-total-ssh-connections.png)
+![Total SSH Connections](../Screenshots/04-Splunk/02.2-total-ssh-connections.png)
 
 ---
 
