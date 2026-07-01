@@ -1,30 +1,29 @@
-# Day #29: EDR Basics – Detecting Suspicious Network Traffic Using Suricata
+# EDR Basics – Detecting Suspicious Network Traffic Using Suricata
 
-## 🎯 Objective
+## Objective
 
-The objective of this lab was to detect suspicious network traffic by integrating **Suricata IDS** with **Wazuh SIEM**. A simulated reconnaissance attack was performed using **Nmap** from a Kali Linux machine, and the generated alerts were monitored and analyzed through the Wazuh Dashboard.
+The objective of this task was to integrate **Suricata IDS** with **Wazuh SIEM** to detect suspicious network traffic. A port scanning attack was simulated from a Kali Linux machine, and the generated alerts were collected and investigated through the Wazuh Dashboard.
 
 ---
 
-# 🛠️ Lab Environment
+## Lab Environment
 
 | Component | Details |
-|-----------|---------|
-| Wazuh Server | Ubuntu Server with Wazuh Manager & Dashboard |
+|----------|---------|
+| Wazuh Manager | Ubuntu Server |
 | Wazuh Agent | Ubuntu 24.04 LTS |
 | IDS | Suricata |
 | Attacker Machine | Kali Linux |
 | Attack Tool | Nmap |
-| Detection Platform | Wazuh Dashboard |
+| Monitoring Platform | Wazuh Dashboard |
 
 ---
 
-# 📌 Implementation Steps
+## Implementation
 
-## Step 1 – Verify Suricata & Wazuh Agent
+### Step 1 – Verified Suricata and Wazuh Services
 
-- Verified that the **Suricata IDS** service was running successfully.
-- Confirmed the **Wazuh Agent** was active and forwarding logs.
+After installing and configuring Suricata, the status of both **Suricata** and the **Wazuh Agent** was verified to ensure that network events could be collected and forwarded successfully.
 
 **Screenshot**
 
@@ -32,17 +31,17 @@ The objective of this lab was to detect suspicious network traffic by integratin
 
 ---
 
-## Step 2 – Simulate Network Reconnaissance
+### Step 2 – Simulated Suspicious Network Traffic
 
-From the Kali Linux attacker machine, multiple Nmap scans were performed against the Ubuntu endpoint.
+From the Kali Linux machine, multiple **Nmap** scans were performed against the Ubuntu endpoint to simulate reconnaissance activity.
 
-Example commands used:
+Commands executed:
 
 ```bash
 nmap -sS -T4 192.168.56.103
 ```
 
-During the scan, Suricata monitored the traffic and generated network events in the **eve.json** log.
+At the same time, Suricata monitored the incoming traffic and generated events in the `eve.json` log file.
 
 **Screenshot**
 
@@ -50,16 +49,16 @@ During the scan, Suricata monitored the traffic and generated network events in 
 
 ---
 
-## Step 3 – Analyze Alerts in Wazuh
+### Step 3 – Monitored Alerts in Wazuh
 
-After the scan, Wazuh successfully parsed the Suricata logs and generated multiple security alerts.
+Once the scan was completed, the generated Suricata events were successfully ingested into Wazuh. The Threat Hunting dashboard displayed multiple IDS alerts corresponding to the detected network scan.
 
-Detected events included:
+Observed alerts included:
 
 - ET SCAN Potential VNC Scan
+- ET SCAN Suspicious inbound MSSQL Port
 - ET SCAN Suspicious inbound MySQL Port
 - ET SCAN Suspicious inbound PostgreSQL Port
-- ET SCAN Suspicious inbound MSSQL Port
 - ET SCAN Suspicious inbound Oracle SQL Port
 
 **Screenshot**
@@ -68,19 +67,19 @@ Detected events included:
 
 ---
 
-## Step 4 – Investigate Alert Details
+### Step 4 – Investigated Alert Details
 
-The generated alert was opened to inspect detailed information including:
+The generated alert was examined from the Wazuh Dashboard to review important information such as:
 
+- Alert Signature
 - Source IP Address
 - Destination IP Address
 - Destination Port
-- Alert Signature
-- Alert Severity
 - Event Type
-- Network Flow Information
+- Alert Severity
+- Network Flow Details
 
-This demonstrates how security analysts investigate suspicious network activity using Wazuh.
+This helped verify that the detected activity matched the simulated network reconnaissance performed from the Kali Linux machine.
 
 **Screenshot**
 
@@ -88,29 +87,16 @@ This demonstrates how security analysts investigate suspicious network activity 
 
 ---
 
-# 🔍 Detection Summary
+## Results
 
-| Event | Status |
-|--------|--------|
-| Suricata Installed | ✅ |
-| Wazuh Agent Connected | ✅ |
-| Nmap Scan Executed | ✅ |
-| Suricata Generated Alerts | ✅ |
-| Wazuh Parsed Alerts | ✅ |
-| Alert Investigation Completed | ✅ |
+- Successfully integrated **Suricata IDS** with the **Wazuh Agent**.
+- Generated network events by performing an **Nmap SYN scan**.
+- Successfully received and analyzed Suricata alerts in the Wazuh Dashboard.
+- Verified detailed alert information including source IP, destination IP, destination port, and alert signature.
+- Demonstrated how suspicious network reconnaissance can be detected and investigated using an IDS integrated with a SIEM platform.
 
 ---
 
-# 🧠 Key Learnings
+## Conclusion
 
-- Learned how **Suricata IDS** detects suspicious network traffic.
-- Understood how **Nmap reconnaissance** generates IDS alerts.
-- Integrated Suricata logs with the **Wazuh Agent**.
-- Investigated alerts using the **Wazuh Dashboard**.
-- Gained hands-on experience with network threat detection and basic EDR monitoring.
-
----
-
-# ✅ Conclusion
-
-Successfully configured **Suricata IDS** with **Wazuh SIEM** to monitor network traffic and detect suspicious reconnaissance activity. By performing an Nmap scan from a Kali Linux system, Suricata generated multiple IDS alerts which were collected and visualized in the Wazuh Dashboard. This lab provided practical experience in integrating IDS with a SIEM platform and analyzing network-based security events from a SOC analyst's perspective.
+This task provided hands-on experience with **network-based threat detection** using **Suricata IDS** and **Wazuh SIEM**. By simulating a real-world port scanning attack, it was possible to observe how network events are captured, correlated, and presented for investigation. This practical exercise strengthened the understanding of IDS integration, alert monitoring, and network threat analysis from a SOC analyst's perspective.
