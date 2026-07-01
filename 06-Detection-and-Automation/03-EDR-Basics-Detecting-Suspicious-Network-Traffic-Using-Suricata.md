@@ -27,7 +27,7 @@ After installing and configuring Suricata, the status of both **Suricata** and t
 
 **Screenshot**
 
-![03.1-Suricata-and-Wazuh-Agent-Service-Status](../Screenshots/Day-29/03.1-Suricata-and-Wazuh-Agent-Service-Status.png)
+![03.1-Suricata-and-Wazuh-Agent-Service-Status](../Screenshots/06-Detection-and-Automation/03.1-Suricata-and-Wazuh-Agent-Service-Status.png)
 
 ---
 
@@ -45,7 +45,7 @@ At the same time, Suricata monitored the incoming traffic and generated events i
 
 **Screenshot**
 
-![03.2-Nmap-Port-Scan-and-Suricata-Logs](../Screenshots/Day-29/03.2-Nmap-Port-Scan-and-Suricata-Logs.png)
+![03.2-Nmap-Port-Scan-and-Suricata-Logs](../Screenshots/06-Detection-and-Automation/03.2-Nmap-Port-Scan-and-Suricata-Logs.png)
 
 ---
 
@@ -63,7 +63,7 @@ Observed alerts included:
 
 **Screenshot**
 
-![03.3-Wazuh-Suricata-Alerts](../Screenshots/Day-29/03.3-Wazuh-Suricata-Alerts.png)
+![03.3-Wazuh-Suricata-Alerts](../Screenshots/06-Detection-and-Automation/03.3-Wazuh-Suricata-Alerts.png)
 
 ---
 
@@ -83,7 +83,7 @@ This helped verify that the detected activity matched the simulated network reco
 
 **Screenshot**
 
-![03.4-Suricata-Alert-Details](../Screenshots/Day-29/03.4-Suricata-Alert-Details.png)
+![03.4-Suricata-Alert-Details](../Screenshots/06-Detection-and-Automation/03.4-Suricata-Alert-Details.png)
 
 ---
 
