@@ -117,4 +117,4 @@ The query calculated the total number of SSH connections recorded in the ingeste
 
 The SPL query categorized SSH events by event type to provide an overview of authentication activity.
 
-![SSH Event Type Distribution](../Screenshots/04-SIEM/02.3-ssh-event-type-distribution.png)
+![SSH Event Type Distribution](../Screenshots/04-Splunk/02.3-ssh-event-type-distribution.png)
