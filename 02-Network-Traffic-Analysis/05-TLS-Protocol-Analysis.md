@@ -100,7 +100,7 @@ Applied the `tls` display filter to display all TLS packets captured in the netw
 
 Filtered Client Hello handshake packets using the `tls.handshake.type == 1` display filter to observe the initiation of the TLS handshake.
 
-![Client Hello Messages](../Screenshots/02-Network-Traffic-Analysis/05.2-client-hello.png)
+![Client Hello Messages](../Screenshots/02-Network-Traffic-Analysis/05.2-client-hello-messages.png)
 
 ---
 
